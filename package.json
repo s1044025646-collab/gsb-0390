@@ -1,0 +1,17 @@
+{
+  "name": "git-delta-rebuild-service",
+  "version": "1.0.0",
+  "description": "Git delta 对象重建与指令边界解释后端（一跳、已解压 delta）",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\"",
+    "start": "node dist/src/cli.js serve",
+    "demo": "node dist/src/cli.js demo"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.0",
+    "typescript": "^7.0.0"
+  }
+}
