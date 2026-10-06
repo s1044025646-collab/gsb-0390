@@ -1,0 +1,26 @@
+{
+  "name": "git-delta-rebuild",
+  "version": "1.0.0",
+  "description": "离线 Git delta 对象重建与复制指令边界解释后端",
+  "type": "module",
+  "bin": {
+    "git-delta-rebuild": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/tests/delta.test.js",
+    "start": "node dist/cli.js serve",
+    "demo": "npm run build && node dist/cli.js demo"
+  },
+  "keywords": [
+    "git",
+    "delta",
+    "sqlite",
+    "typescript"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "typescript": "^5.9.0"
+  }
+}
